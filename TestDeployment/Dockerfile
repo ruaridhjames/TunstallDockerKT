@@ -1,12 +1,10 @@
 #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
 #For more information, please see https://aka.ms/containercompat
 
-FROM ruaridhdockerkt.azurecr.io:latest
-
-ADD local-docker.json /app/local.json
-
-#FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1809 AS base
-#WORKDIR /app
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1809 AS base
+COPY . /app
+WORKDIR /app
+ENTRYPOINT ["dotnet", "TestDeployment.dll"]
 #EXPOSE 80
 #EXPOSE 443
 
