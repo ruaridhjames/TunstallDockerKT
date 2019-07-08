@@ -2,6 +2,7 @@
 #For more information, please see https://aka.ms/containercompat
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1809 AS base
+
 COPY . /app
 WORKDIR /app
 ENTRYPOINT ["dotnet", "TestDeployment.dll"]
