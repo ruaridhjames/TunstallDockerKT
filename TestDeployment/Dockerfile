@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
+FROM microsoft/aspnetcore-build:2.0 AS build-env
 
 COPY . /app
 WORKDIR /app

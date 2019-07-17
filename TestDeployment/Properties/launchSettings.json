@@ -28,11 +28,10 @@
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
       "environmentVariables": {
-        "ASPNETCORE_URLS": "https://+:443;http://+:80",
-        "ASPNETCORE_HTTPS_PORT": "44374"
+        "ASPNETCORE_URLS": "http://+:9753;http://+:8642",
       },
       "httpPort": 57236,
-      "useSSL": true,
+      "useSSL": false,
       "sslPort": 44374
     }
   }

@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  testdeployment:
+    image: "ruaridhdockerkt.azurecr.io/testdeployment:39"
+    ports:
+     - 5678:5678
