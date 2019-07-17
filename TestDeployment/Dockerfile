@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore-build:2.2 AS build-env
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1809 AS base
 
 COPY . /app
 WORKDIR /app
